@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "404721575789",
+    "firebase_url": "https://foresteye-699bb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "foresteye-699bb",
+    "storage_bucket": "foresteye-699bb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404721575789:android:c7ba8ec05133cafa3e9c64",
+        "android_client_info": {
+          "package_name": "com.example.foresteye"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALbxkNP1Z7Y_y3HCEGh8-m36A1ttAiHV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

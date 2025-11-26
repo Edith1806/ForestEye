@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="liveAlertCount"
+            type="String" />
+    </data>
+
+    <!-- ✅ Only one root -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 🌄 Background image safely handled -->
+        <ImageView
+            android:id="@+id/bgForest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/forest"
+            android:contentDescription="@string/dashboard_background"
+            android:alpha="0.85" />
+
+        <!-- 🌈 Gradient overlay -->
+
+        <!-- 🌿 Foreground Content -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/tvDashboardTitle"
+                android:text="@string/foresteye_dashboard"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Cards -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Live Alerts -->
+                    <LinearLayout
+                        android:id="@+id/btnLiveAlerts"
+                        android:layout_width="250dp"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_gradient_pink"
+                        android:elevation="10dp"
+                        android:clipToOutline="true">
+
+                        <ImageView
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:text="@string/view_live_alerts"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                        <TextView
+                            android:id="@+id/tvLiveAlertCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text='@{"Live Alerts: " + (liveAlertCount != null ? liveAlertCount : "0")}'
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif" />
+                    </LinearLayout>
+
+                    <!-- Manual Detection -->
+                    <LinearLayout
+                        android:id="@+id/btnManualDetection"
+                        android:layout_width="250dp"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_gradient_purple"
+                        android:elevation="10dp"
+                        android:clipToOutline="true">
+
+                        <ImageView
+                            android:src="@android:drawable/ic_menu_camera"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:text="@string/manual_detection"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+                    </LinearLayout>
+
+                    <!-- Logout -->
+                    <LinearLayout
+                        android:id="@+id/btnLogout"
+                        android:layout_width="250dp"
+                        android:layout_height="160dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:background="@drawable/card_gradient_orange"
+                        android:elevation="10dp"
+                        android:clipToOutline="true">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@android:drawable/ic_lock_power_off"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:text="@string/logout"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

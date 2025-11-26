@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ForestEye</string>
+    <string name="foresteye">ForestEye</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="animal">🐾 Animal</string>
+    <string name="time">🕒 Time</string>
+    <string name="mark_as_verified">Mark as Verified</string>
+    <string name="location">📍 Location</string>
+    <string name="foresteye_dashboard"> ForestEye Dashboard 🐾</string>
+    <string name="view_live_alerts">⚠️ View Live Alerts</string>
+    <string name="manual_detection">🦁 Manual Detection</string>
+    <string name="logout"> Logout</string>
+    <string name="live_animal_detections">🦜 Live Animal Detections</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="manual_animal_detection">📸 Manual Animal Detection</string>
+    <string name="live_animals_detections">Live Animals Detections</string>
+    <string name="elephant">🐾 Elephant</string>
+    <string name="madurai_forest_zone">📍 Madurai Forest Zone</string>
+    <string name="_2025_10_08_10_45_am">🕒 2025-10-08 10:45 AM</string>
+    <string name="animal_image_description">Animal detected</string>
+    <string name="animal_name_placeholder">Animal</string>
+    <string name="location_text_placeholder">remote</string>
+    <string name="time_text_placeholder">09_10_2025</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_here">Login</string>
+    <string name="password_here">Password</string>
+    <string name="Email">Email</string>
+    <string name="Foresteye">🌲 ForestEye</string>
+    <string name="image_preview">image_preview</string>
+    <string name="forest_background_desc">Background iamge</string>
+    <string name="dashboard_background">Forest Dashboard\n</string>
+</resources>
